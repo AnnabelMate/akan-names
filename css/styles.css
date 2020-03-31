@@ -8,3 +8,8 @@ body {
     color: antiquewhite;
     overflow: hidden;
 }
+
+h1 {
+    text-align: center;
+}
+
