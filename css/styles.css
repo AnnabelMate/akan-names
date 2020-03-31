@@ -1,5 +1,5 @@
 body {
-    background: url("/images/clothing.jpg") no-repeat center;
+    background: url("/images/spectators.jpg") no-repeat center center/cover;
     height: 600px;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
