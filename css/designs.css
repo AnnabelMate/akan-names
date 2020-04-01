@@ -1,0 +1,17 @@
+body {
+    background-color: salmon;
+}
+
+.jumbotron {
+    text-align: center;
+    color: plum;
+}
+
+.card {
+    text-align: center;
+}
+
+.form {
+    text-align: center;
+    line-height: 0.8cm;
+}
