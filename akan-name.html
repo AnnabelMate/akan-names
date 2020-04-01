@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Akan Form</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="/css/designs.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <div class="container">
-          <div class="jumbotron">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Akan Form</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="/css/designs.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
         <h1>Akan Names Form</h1>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card">
-                <div class="card-body">
-        <h2>Please Fill In The Form Provided Below.</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <h2>Please Fill In The Form Provided Below.</h2>
+            </div>
+            <div class="form">
+              <label for="date">Date:</label>
+              <br />
+              <input type="text" id="date" name="date" placeholder="Date" />
+              <br />
+              <label for="date">Month:</label>
+              <br />
+              <input
+                type="text"
+                id="month"
+                name="month"
+                placeholder="Month in Numbers"
+              />
+              <br />
+              <label for="date">Year:</label>
+              <br />
+              <input type="text" id="year" name="year" placeholder="Year" />
+              <br />
+              <label for="gender">Gender:</label><br />
+              <input type="radio" name="gender" id="gender" value="male" /> Male
+              <br />
+              <input type="radio" name="gender" value="female" /> Female
+              <br />
+              <input type="submit" value="Submit" onclick="output()" />
             </div>
           </div>
-          <div class="form">
-            <label for="date">Date:</label>
-            <br>
-            <input type="text" id="date" name="date" placeholder="Date">
-            <br>
-            <label for="date">Month:</label>
-            <br>
-            <input type="text" id="month" name="month" placeholder="Month in Numbers">
-            <br>
-            <label for="date">Year:</label>
-            <br>
-            <input type="text" id="year" name="year" placeholder="Year">
-            <br>
-            <label for="gender">Gender:</label><br>
-            <input type="radio" name="gender" id="gender" value="male" /> Male
-            <br>
-            <input type="radio" name="gender" value="female" /> Female
-            <br>
-            <input type="submit" value="Submit" onclick="output()">
-            <p id="outcome"></p>
-                </div>
-              </div>
-          </div>
         </div>
-    </body>
-    <script src="/js/script.js"></script>
+        <p id="outcome"></p>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>
