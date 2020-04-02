@@ -1,6 +1,6 @@
 function output() {
-  var date = document.getElementById("day").value;
-  var dd = parseInt(date);
+  var day = document.getElementById("day").value;
+  var dd = parseInt(day);
   var month = document.getElementById("month").value;
   var mm = parseInt(month);
   var year = document.getElementById("year").value;
@@ -65,6 +65,6 @@ function output() {
     document.getElementById("outcome").innerHTML =
       "You were born on Sunday.Your akan name is " + girl[0];
   } else {
-    alert("Input correct details");
+    alert("Input your information please");
   }
 }
