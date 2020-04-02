@@ -65,6 +65,6 @@ function output() {
     document.getElementById("outcome").innerHTML =
       "You were born on Sunday.Your akan name is " + girl[0];
   } else {
-    alert("Input your information please");
+    alert("Input correct information please");
   }
 }
