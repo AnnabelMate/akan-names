@@ -24,22 +24,35 @@
               <h2>Please Fill In The Form Provided Below.</h2>
             </div>
             <div class="form">
-              <label for="date">Date:</label>
-              <br />
-              <input type="text" id="date" name="date" placeholder="Date" />
-              <br />
-              <label for="date">Month:</label>
+              <label for="day">Date:</label>
               <br />
               <input
-                type="text"
+                type="number"
+                id="day"
+                name="day"
+                placeholder="Date"
+                required
+              />
+              <br />
+              <label for="month">Month:</label>
+              <br />
+              <input
+                type="number"
                 id="month"
                 name="month"
                 placeholder="Month in Numbers"
+                required
               />
               <br />
-              <label for="date">Year:</label>
+              <label for="year">Year:</label>
               <br />
-              <input type="text" id="year" name="year" placeholder="Year" />
+              <input
+                type="number"
+                id="year"
+                name="year"
+                placeholder="Year"
+                required
+              />
               <br />
               <label for="gender">Gender:</label><br />
               <input type="radio" name="gender" id="gender" value="male" /> Male
@@ -47,10 +60,10 @@
               <input type="radio" name="gender" value="female" /> Female
               <br />
               <input type="submit" value="Submit" onclick="output()" />
+              <div id="outcome"></div>
             </div>
           </div>
         </div>
-        <p id="outcome"></p>
       </div>
     </div>
     <script src="js/script.js"></script>
